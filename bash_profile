@@ -23,7 +23,7 @@ alias ll='ls -l'
 alias la='ls -a'
 
 #system update shortcuts
-if [ $(uname = "Darwin" ]
+if [ $(uname) = "Darwin" ]
 then
   alias lup='say "listing updates" && softwareupdate -l'
   alias iup='say "installing updates." ; sudo softwareupdate -i'
