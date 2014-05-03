@@ -13,3 +13,6 @@
 [submodule "vim/bundle/vim-ruby"]
 	path = vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "vim/bundle/indentLine"]
+	path = vim/bundle/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
