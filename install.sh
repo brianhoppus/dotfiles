@@ -1,6 +1,6 @@
 #!/bin/bash
 cp ./vimrc ~/.vimrc
-rsync -av ./vim ~/.vim/
+rsync -av ./vim/ ~/.vim/
 cp ./tmux.conf ~/.tmux.conf
 
 if [ $(uname) == "Darwin" ]
