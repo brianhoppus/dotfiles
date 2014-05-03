@@ -12,5 +12,3 @@ else
 fi
 
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
-sudo apt-get update && sudo apt-get install zsh
-chsh -s /bin/zsh
