@@ -7,6 +7,7 @@ cp ./zshrc ~/.zshrc
 if [ $(uname) == "Darwin" ]
 then
   cp ./bash_profile ~/.bash_profile
+  brew install ctags
 else
   cp ./bash_profile ~/.bashrc
 fi

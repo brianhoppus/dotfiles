@@ -9,3 +9,4 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 set tabstop=2 shiftwidth=2 expandtab
 set mouse=a
+nmap <C-t> :TagbarToggle<CR>
