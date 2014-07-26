@@ -10,6 +10,7 @@ then
   brew install ctags
 else
   cp ./bash_profile ~/.bashrc
+  sudo apt-get install ctags
 fi
 
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
