@@ -1,15 +1,15 @@
 #!/bin/bash
-cp ./vimrc ~/.vimrc
-rsync -av ./vim/ ~/.vim/
-cp ./tmux.conf ~/.tmux.conf
-cp ./zshrc ~/.zshrc
+ln -s $(pwd)/vimrc ~/.vimrc
+ln -s $(pwd)/vim/ ~/.vim/
+ln -s $(pwd)/tmux.conf ~/.tmux.conf
+ln -s $(pwd)/zshrc ~/.zshrc
 
 if [ $(uname) == "Darwin" ]
 then
-  cp ./bash_profile ~/.bash_profile
+  ln -s $(pwd)/bash_profile ~/.bash_profile
   brew install ctags
 else
-  cp ./bash_profile ~/.bashrc
+  ln -s $(pwd)/bash_profile ~/.bashrc
   sudo apt-get install ctags
 fi
 
