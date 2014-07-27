@@ -11,7 +11,7 @@ then
 else
   mv ~/.bashrc ~/.bashrc.orig
   ln -s $(pwd)/bash_profile ~/.bashrc
-  sudo apt-get install ctags
+  sudo apt-get install exuberant-ctags
 fi
 
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
