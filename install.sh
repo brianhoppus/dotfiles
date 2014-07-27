@@ -7,7 +7,7 @@ ln -s $(pwd)/zshrc ~/.zshrc
 if [ $(uname) == "Darwin" ]
 then
   ln -s $(pwd)/bash_profile ~/.bash_profile
-  brew install ctags macvim
+  brew install ctags macvim vim
 else
   ln -s $(pwd)/bash_profile ~/.bashrc
   sudo apt-get install ctags
