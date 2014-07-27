@@ -1,6 +1,6 @@
 #!/bin/bash
 ln -s $(pwd)/vimrc ~/.vimrc
-ln -s $(pwd)/vim/ ~/.vim/
+ln -s $(pwd)/vim ~/.vim
 ln -s $(pwd)/tmux.conf ~/.tmux.conf
 ln -s $(pwd)/zshrc ~/.zshrc
 
@@ -9,6 +9,7 @@ then
   ln -s $(pwd)/bash_profile ~/.bash_profile
   brew install ctags macvim vim
 else
+  mv ~/.bashrc ~/.bashrc.orig
   ln -s $(pwd)/bash_profile ~/.bashrc
   sudo apt-get install ctags
 fi
