@@ -2,7 +2,6 @@
 ln -s $(pwd)/vimrc ~/.vimrc
 ln -s $(pwd)/vim ~/.vim
 ln -s $(pwd)/tmux.conf ~/.tmux.conf
-ln -s $(pwd)/zshrc ~/.zshrc
 
 if [ $(uname) == "Darwin" ]
 then
@@ -15,3 +14,5 @@ else
 fi
 
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+mv ~/.zshrc ~/.zshrc.orig
+ln -s $(pwd)/zshrc ~/.zshrc
