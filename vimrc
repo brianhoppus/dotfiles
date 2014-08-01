@@ -10,3 +10,6 @@ filetype plugin on    " Enable filetype-specific plugins
 set tabstop=2 shiftwidth=2 expandtab
 set mouse=a
 nmap <C-t> :TagbarToggle<CR>
+"let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+"let g:syntastic_cpp_compiler = 'clang++'
+"let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
