@@ -76,3 +76,5 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 export EDITOR=/usr/bin/vim
 export PATH=$PATH:~/bin
+
+alias grep=/bin/egrep
