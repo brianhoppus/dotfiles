@@ -6,7 +6,7 @@ ln -s $(pwd)/tmux.conf ~/.tmux.conf
 if [ $(uname) == "Darwin" ]
 then
   ln -s $(pwd)/bash_profile ~/.bash_profile
-  brew install ctags macvim vim
+  brew install ctags macvim vim wget
 else
   mv ~/.bashrc ~/.bashrc.orig
   ln -s $(pwd)/bash_profile ~/.bashrc
