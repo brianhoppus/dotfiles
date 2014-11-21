@@ -78,4 +78,4 @@ export EDITOR=/usr/bin/vim
 export PATH=$PATH:~/bin
 export CLICOLOR=1
 [[ "$TERM" == "xterm"  ]] && export TERM=xterm-256color
-alias grep=/bin/egrep
+alias grep=/usr/bin/egrep
