@@ -1,5 +1,6 @@
 execute pathogen#infect()
 set number
+set ruler
 filetype plugin indent on
 map <C-n> :NERDTreeToggle<CR>
 set nocompatible      " We're running Vim, not Vi!
