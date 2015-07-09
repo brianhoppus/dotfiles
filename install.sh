@@ -11,6 +11,9 @@ else
   mv ~/.bashrc ~/.bashrc.orig
   ln -s $(pwd)/bash_profile ~/.bashrc
   sudo apt-get install exuberant-ctags
+  wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
+  mv dircolors.ansi-dark ~/.dircolors
+  eval `dircolors ~/.dircolors`
 fi
 
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
