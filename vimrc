@@ -1,16 +1,33 @@
-execute pathogen#infect()
-set number
-set ruler
-filetype plugin indent on
-map <C-n> :NERDTreeToggle<CR>
+" General
+set number	" Show line numbers
+set linebreak	" Break lines at word (requires Wrap lines)
+set showbreak=+++	" Wrap-broken line prefix
+set textwidth=100	" Line wrap (number of cols)
+set showmatch	" Highlight matching brace
+set visualbell	" Use visual bell (no beeping)
+ 
+set hlsearch	" Highlight all search results
+set smartcase	" Enable smart-case search
+set ignorecase	" Always case-insensitive
+set incsearch	" Searches for strings incrementally
+ 
+set autoindent	" Auto-indent new lines
+set expandtab	" Use spaces instead of tabs
+set shiftwidth=4	" Number of auto-indent spaces
+set smartindent	" Enable smart-indent
+set smarttab	" Enable smart-tabs
+set softtabstop=4	" Number of spaces per Tab
+ 
+" Advanced
+set ruler	" Show row and column ruler information
+ 
+set undolevels=1000	" Number of undo levels
+set backspace=indent,eol,start	" Backspace behaviour
+
+"map <C-n> :NERDTreeToggle<CR>
 set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
-set tabstop=4 shiftwidth=4 expandtab
 set mouse=a
-nmap <C-t> :TagbarToggle<CR>
-"let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-"let g:syntastic_cpp_compiler = 'clang++'
-"let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
