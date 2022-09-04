@@ -1,19 +1,16 @@
 #!/bin/bash
 ln -s $(pwd)/vimrc ~/.vimrc
-ln -s $(pwd)/vim/ ~/.vim
 ln -s $(pwd)/tmux.conf ~/.tmux.conf
 
 if [ $(uname) == "Darwin" ]
 then
-  ln -s $(pwd)/bash_profile ~/.bash_profile
-  brew install ctags macvim vim wget
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/brianhoppus/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  brew install vim wget
 else
-  mv ~/.bashrc ~/.bashrc.orig
-  ln -s $(pwd)/bash_profile ~/.bashrc
-  sudo apt-get install exuberant-ctags
-  wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
-  mv dircolors.ansi-dark ~/.dircolors
-  eval `dircolors ~/.dircolors`
+  echo "Why are you not using a Mac?!"
+  exit 1
 fi
 
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
